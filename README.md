@@ -9,6 +9,6 @@ The Documentation folder contains the doc where we have completed some documenta
 5)Detail Usecases\
 6)Detailed Sequence Diagram\
 7) Database Schema\
-8)Dataflow Diagram\
+8)Dataflow Diagram
 
-\The Prototype contains the Prototype of the application which is developed in Figma.\
+The Prototype contains the Prototype of the application which is developed in Figma.\
