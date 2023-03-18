@@ -7,9 +7,9 @@ import {
   Heading,
   Button,
 } from "@chakra-ui/react";
-// import Builder from "./Builder";
-// import ResumePreview from "./ResumePreview";
-// import ThemeSelect from "./Theme/ThemeSelect";
+import Builder from "./Builder";
+import ResumePreview from "./ResumePreview";
+import ThemeSelect from "./Theme/ThemeSelect";
 import { useReactToPrint } from "react-to-print";
 import { useResume } from "../Context";
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -31,7 +31,7 @@ const Main = () => {
         style={{ fontFamily: "Poppins" }}
         fontWeight={"medium"}
       >
-        Resumate
+        Make Your Resume
       </Heading>
 
       <Container maxW={"7xl"} px={8} my={3}>
@@ -40,11 +40,11 @@ const Main = () => {
           pt={4}
           direction={{ base: "column", sm: "row" }}
         >
-          {/* <ThemeSelect /> */}
+          <ThemeSelect />
           <Button
             rightIcon={<MdOutlineFileDownload />}
             onClick={handlePrint}
-            colorScheme={"purple"}
+            colorScheme={"blue"}
           >
             Download
           </Button>
@@ -60,8 +60,8 @@ const Main = () => {
         alignItems={"flex-start"}
         justifyContent={"space-between"}
       >
-        {/* <Builder />
-        <ResumePreview /> */}
+        <Builder />
+        <ResumePreview />
       </Stack>
     </Container>
   );

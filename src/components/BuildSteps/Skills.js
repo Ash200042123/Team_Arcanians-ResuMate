@@ -1,36 +1,45 @@
-import { Box, Button, FormControl, FormLabel, HStack, Input, Tag, TagCloseButton, TagLabel } from '@chakra-ui/react'
-import React, { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid';
-import { useResume } from '../../Context';
-import { useToast } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  FormControl,
+  FormLabel,
+  HStack,
+  Input,
+  Tag,
+  TagCloseButton,
+  TagLabel,
+} from "@chakra-ui/react";
+import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+import { useResume } from "../../Context";
+import { useToast } from "@chakra-ui/react";
 
 const Skills = () => {
+  const toast = useToast();
+  const [skill, setSkill] = useState("");
+  const { skills, setSkills } = useResume();
 
-    const toast = useToast();
-    const [skill, setSkill] = useState("");
-    const { skills, setSkills } = useResume();
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!skill || skill === " ") {
-            toast({
-                title: 'Empty Input',
-                status: 'error',
-                isClosable: true,
-            })
-            return;
-        }
-        const newSkill = {
-            id: uuidv4(),
-            name: skill,
-        }
-        setSkills([...skills, newSkill]);
-        setSkill("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!skill || skill === " ") {
+      toast({
+        title: "Empty Input",
+        status: "error",
+        isClosable: true,
+      });
+      return;
     }
+    const newSkill = {
+      id: uuidv4(),
+      name: skill,
+    };
+    setSkills([...skills, newSkill]);
+    setSkill("");
+  };
 
-    const deleteSkill = (id) => {
-        setSkills(skills.filter((elem) => elem.id !== id))
-    }
+  const deleteSkill = (id) => {
+    setSkills(skills.filter((elem) => elem.id !== id));
+  };
 
     return (
         <>
@@ -64,4 +73,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default Skills;
