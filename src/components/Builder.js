@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useResume } from "../Context";
-// import About from "./BuildSteps/About";
+import About from "./BuildSteps/About";
 import Education from "./BuildSteps/Education";
 import Projects from "./BuildSteps/Projects";
 import Skills from "./BuildSteps/Skills";
@@ -44,7 +44,9 @@ const Builder = () => {
           </Tab>
         </TabList>
         <TabPanels>
-          <TabPanel>{/* <About /> */}</TabPanel>
+          <TabPanel>
+            <About />
+          </TabPanel>
           <TabPanel>
             <Education />
           </TabPanel>
