@@ -57,7 +57,7 @@ const Projects = () => {
 
             {
                 projects.length < 4 && (
-                    <Button colorScheme={'purple'} my={5} onClick={addMore}>Add More</Button>
+                    <Button colorScheme={'blue'} my={5} onClick={addMore}>Add More</Button>
                 )
             }
         </>

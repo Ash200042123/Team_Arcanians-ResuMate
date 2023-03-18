@@ -81,7 +81,7 @@ const Work = () => {
 
             {
                 workList.length < 3 && (
-                    <Button colorScheme={'purple'} my={5} onClick={addMore}>Add More</Button>
+                    <Button colorScheme={'blue'} my={5} onClick={addMore}>Add More</Button>
                 )
             }
         </>

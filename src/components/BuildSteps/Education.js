@@ -65,8 +65,8 @@ const Education = () => {
             </Accordion>
 
             {
-                educationList.length < 2 && (
-                    <Button colorScheme={'purple'} my={5} onClick={addMore}>Add More</Button>
+                educationList.length < 3 && (
+                    <Button colorScheme={'blue'} my={5} onClick={addMore}>Add More</Button>
                 )
             }
 
