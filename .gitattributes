@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+/node_modules
+/.pnp
+.pnp.js
+
+
+/build
+
+/coverage
+
+yarn-debug.log*
+yarn-error.log*
