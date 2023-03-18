@@ -7,8 +7,8 @@ import {
   Heading,
   Button,
 } from "@chakra-ui/react";
-// import Builder from "./Builder";
-// import ResumePreview from "./ResumePreview";
+import Builder from "./Builder";
+import ResumePreview from "./ResumePreview";
 import ThemeSelect from "./Theme/ThemeSelect";
 import { useReactToPrint } from "react-to-print";
 import { useResume } from "../Context";
@@ -44,7 +44,7 @@ const Main = () => {
           <Button
             rightIcon={<MdOutlineFileDownload />}
             onClick={handlePrint}
-            colorScheme={"purple"}
+            colorScheme={"blue"}
           >
             Download
           </Button>
@@ -60,8 +60,8 @@ const Main = () => {
         alignItems={"flex-start"}
         justifyContent={"space-between"}
       >
-        {/* <Builder /> */}
-        {/* <ResumePreview /> */}
+        <Builder />
+        <ResumePreview />
       </Stack>
     </Container>
   );
