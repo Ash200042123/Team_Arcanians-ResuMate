@@ -12,3 +12,4 @@ The Documentation folder contains the doc where we have completed some documenta
 8)Dataflow Diagram
 
 The Prototype contains the Prototype of the application which is developed in Figma.
+Prototype link: https://www.figma.com/file/a8xIguyeXCAU4Bm8MbkAxW/Untitled?node-id=0-1
