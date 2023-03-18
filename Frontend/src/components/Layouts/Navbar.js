@@ -25,12 +25,12 @@ const Navbar = () => {
           as="nav"
           style={{ fontFamily: "Poppins" }}
         >
-          <Text as="a" href="#" fontSize="lg">
+          {/* <Text as="a" href="#" fontSize="lg">
             Login
           </Text>
           <Text as="a" href="#" fontSize="lg">
             SignUp
-          </Text>
+          </Text> */}
         </HStack>
       </Flex>
     </Stack>
